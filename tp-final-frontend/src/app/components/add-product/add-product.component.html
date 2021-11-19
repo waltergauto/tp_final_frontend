@@ -1,1 +1,31 @@
-<p>add-product works!</p>
+<div class="card">
+    <div class="card-header">
+        Add a new Product
+    </div>
+    <div class="card-body">
+        <form (submit)="addProduct()">
+            <div class="form-group mt-2">
+                <label for="code">Product Code: </label>
+                <input type="text" class="form-control" name="code" [(ngModel)]="code">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="code">Product Name: </label>
+                <input type="text" class="form-control" name="code" [(ngModel)]="name">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="code">Product Price: </label>
+                <input type="text" class="form-control" name="code" [(ngModel)]="price">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="code">Existence?: </label>
+                <input type="text" class="form-control" name="code" [(ngModel)]="existence">
+            </div>
+            
+            <input type="submit" value="Add Product" class="btn btn-primary mt-4">
+
+        </form>
+    </div>
+</div>
