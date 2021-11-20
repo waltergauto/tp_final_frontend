@@ -1,1 +1,26 @@
-<p>add-client works!</p>
+<div class="card">
+    <div class="card-header">
+        Add a new Client
+    </div>
+    <div class="card-body">
+        <form (submit)="addClient()">
+            <div class="form-group mt-2">
+                <label for="ruc">Client RUC: </label>
+                <input type="text" class="form-control" name="ruc" [(ngModel)]="ruc" placeholder="Insert client's RUC here...">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="full_name">Client Full Name: </label>
+                <input type="text" class="form-control" name="full_name" [(ngModel)]="full_name" placeholder="Insert client's full name here...">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="email">Client Email: </label>
+                <input type="text" class="form-control" name="email" [(ngModel)]="email" placeholder="Insert client's email here...">
+            </div>
+            
+            <input type="submit" value="Add Client" class="btn btn-primary mt-4">
+
+        </form>
+    </div>
+</div>

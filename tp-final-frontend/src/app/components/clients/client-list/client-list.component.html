@@ -1,1 +1,8 @@
-<p>client-list works!</p>
+<app-add-client (clientAdded)="addClient( $event )"></app-add-client>
+
+<div class="container">
+    <app-client class="col-md-4 p-2"
+        *ngFor="let client of clients"
+        [client]="client">
+    </app-client>
+</div>

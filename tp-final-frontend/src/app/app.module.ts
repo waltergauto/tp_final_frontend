@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//Product Component
 import { NavbarProductComponent } from './components/products/navbar-product/navbar-product.component';
 import { AddProductComponent } from './components/products/add-product/add-product.component';
 import { ProductsListComponent } from './components/products/products-list/products-list.component';
@@ -12,10 +14,13 @@ import { ProductComponent } from './components/products/product/product.componen
 
 //Services
 import { DataProductService } from './services/data-product.service';
+import { DataClientService } from './services/client/data-client.service';
 
+//Client Component
 import { AddClientComponent } from './components/clients/add-client/add-client.component';
 import { ClientComponent } from './components/clients/client/client.component';
 import { ClientListComponent } from './components/clients/client-list/client-list.component';
+import { NavbarClientComponent } from './components/clients/navbar-client/navbar-client.component';
 
 
 @NgModule({
@@ -27,7 +32,8 @@ import { ClientListComponent } from './components/clients/client-list/client-lis
     ProductComponent,
     AddClientComponent,
     ClientComponent,
-    ClientListComponent
+    ClientListComponent,
+    NavbarClientComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,7 @@ import { ClientListComponent } from './components/clients/client-list/client-lis
   ],
   providers: [
     DataProductService,
+    DataClientService
   ],
   bootstrap: [AppComponent]
 })

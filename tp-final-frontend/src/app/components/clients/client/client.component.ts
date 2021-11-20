@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Client } from '../../../models/client';
+import { DataClientService } from '../../../services/client/data-client.service';
 
 @Component({
   selector: 'app-client',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientComponent implements OnInit {
 
-  constructor() { }
+  @Input('client')
+  client!: Client;
+
+  constructor( public dataClientService: DataClientService ) { }
 
   ngOnInit(): void {
+  }
+
+  removeClient ( client: Client ) {
+    
+    const response = confirm('Are you sure to delete it?');
+
+    if ( response ) {
+      this.dataClientService.removeClient( client );
+    }
   }
 
 }
