@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Product } from '../../models/product';
+import { Product } from '../../../models/product';
 
 import { DataProductService } from 'src/app/services/data-product.service';
 
