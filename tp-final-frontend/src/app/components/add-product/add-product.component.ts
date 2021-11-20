@@ -12,7 +12,7 @@ export class AddProductComponent implements OnInit {
   code!: number;
   name!: string;
   price!: number;
-  existence!: boolean;
+  quantity!: number;
 
   @Output()
   productAdded = new EventEmitter<Product>();
@@ -26,13 +26,13 @@ export class AddProductComponent implements OnInit {
       code: this.code,
       name: this.name,
       price: this.price,
-      existence: true,
+      quantity: this.quantity,
 
     });
     this.code = 0;
     this.name = '';
     this.price = 0;
-    this.existence = false;
+    this.quantity = 0;
 
   }
 
