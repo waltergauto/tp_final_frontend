@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Product } from 'src/app/models/product';
 
-import { DataProductService } from 'src/app/services/data-product.service';
+import { DataProductService } from 'src/app/services/product/data-product.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',

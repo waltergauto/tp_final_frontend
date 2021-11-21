@@ -13,7 +13,7 @@ import { ProductsListComponent } from './components/products/products-list/produ
 import { ProductComponent } from './components/products/product/product.component';
 
 //Services
-import { DataProductService } from './services/data-product.service';
+import { DataProductService } from './services/product/data-product.service';
 import { DataClientService } from './services/client/data-client.service';
 
 //Client Component
@@ -21,6 +21,9 @@ import { AddClientComponent } from './components/clients/add-client/add-client.c
 import { ClientComponent } from './components/clients/client/client.component';
 import { ClientListComponent } from './components/clients/client-list/client-list.component';
 import { NavbarClientComponent } from './components/clients/navbar-client/navbar-client.component';
+import { ClientViewComponent } from './components/clients/client-view/client-view.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductViewComponent } from './components/products/product-view/product-view.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { NavbarClientComponent } from './components/clients/navbar-client/navbar
     AddClientComponent,
     ClientComponent,
     ClientListComponent,
-    NavbarClientComponent
+    NavbarClientComponent,
+    ClientViewComponent,
+    HomeComponent,
+    ProductViewComponent
   ],
   imports: [
     BrowserModule,
