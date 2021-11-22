@@ -15,6 +15,7 @@ import { ProductComponent } from './components/products/product/product.componen
 //Services
 import { DataProductService } from './services/product/data-product.service';
 import { DataClientService } from './services/client/data-client.service';
+import { VentasService } from './services/ventas/ventas.service';
 
 //Client Component
 import { AddClientComponent } from './components/clients/add-client/add-client.component';
@@ -24,6 +25,11 @@ import { NavbarClientComponent } from './components/clients/navbar-client/navbar
 import { ClientViewComponent } from './components/clients/client-view/client-view.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductViewComponent } from './components/products/product-view/product-view.component';
+import { VentasComponent } from './components/venta/ventas/ventas.component';
+import { AddVentasComponent } from './components/venta/add-ventas/add-ventas/add-ventas.component';
+import { NavbarVentasComponent } from './components/venta/navbar-ventas/navbar-ventas/navbar-ventas.component';
+import { VentasViewComponent } from './components/venta/ventas-view/ventas-view/ventas-view.component';
+import { VentasListComponent } from './components/venta/ventas-list/ventas-list/ventas-list.component';
 
 
 @NgModule({
@@ -39,7 +45,12 @@ import { ProductViewComponent } from './components/products/product-view/product
     NavbarClientComponent,
     ClientViewComponent,
     HomeComponent,
-    ProductViewComponent
+    ProductViewComponent,
+    VentasComponent,
+    AddVentasComponent,
+    NavbarVentasComponent,
+    VentasViewComponent,
+    VentasListComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +59,8 @@ import { ProductViewComponent } from './components/products/product-view/product
   ],
   providers: [
     DataProductService,
-    DataClientService
+    DataClientService,
+    VentasService
   ],
   bootstrap: [AppComponent]
 })
